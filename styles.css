@@ -108,6 +108,7 @@ body {
     font-family: var(--font-main);
     background: var(--color-blue);
     color: #ffffff;
+    cursor: pointer;
 }
 
 /* Section main - Content Edie */
