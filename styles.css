@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 5rem;
+}
+
+:root {
+    --font-logo: 'Heebo', sans-serif;
+    --font-main: 'Poppins', sans-serif;
+
+    --color-blue: #2D9CDB;
+
+}
+
+/*--- Header of the page ---*/
+
+#header-edie {
+    font-family: var(--font-main);
+}
+#header-edie__navbar {
+    padding: .7rem .5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    position: fixed;
+    top: 0;
+
+    background: #ffffff;
+}
+.navbar-logo {
+    font: normal 800 1rem var(--font-logo);
+}
+.navbar-menu-toggle {
+    display: none;
+}
+
+#header-edie__hero {
+    padding: .6rem;
+    margin-bottom: 5rem;
+    padding: 0 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+#header-edie__hero img {
+    margin: 1rem 0;
+    max-width: 120%;
+    align-self: center;
+    border-radius: 12px;
+}
+#header-edie__hero a {
+    text-decoration: none;
+    color: var(--color-blue);
+    font-size: .7rem;
+    cursor: pointer;
+}
+#header-edie__hero h2 {
+    font-weight: 500;
+}
+#header-edie__hero h3 {
+    max-width: 65%;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+#header-edie__hero p {
+    margin: 1rem 0;
+    font-size: .8rem;
+}
+#header-edie__hero form {
+    margin: .9rem 0;
+}
+#header-edie__hero label,
+.footer-edie__content label {
+    font-size: .6rem;
+    color: #999999;
+}
+#header-edie__hero form .hero-input,
+.footer-edie__content form .footer-input {
+    width: 100%;
+    padding: .2rem;
+    background: #F2F2F2;
+    border-radius: 12px;
+}
+#header-edie__hero form .hero-input input,
+.footer-edie__content form .footer-input input {
+    padding: .65rem 1rem;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+#header-edie__hero form .hero-input input::placeholder,
+.footer-edie__content form .footer-input input::placeholder {
+    font-family: var(--font-main);
+    color: #999999;
+}
+#header-edie__hero form .hero-input button,
+.footer-edie__content form .footer-input button {
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 10px;
+    float: right;
+    font-family: var(--font-main);
+    background: var(--color-blue);
+    color: #ffffff;
+}
+
+/* Section main - Content Edie */
+#content-edie {
+    font-family: var(--font-main);
+    padding: .6rem;
+}
+
+/* Section - Services Edie */
+
+#content-edie__services h3 {
+    padding: 0 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+.services {
+    display: flex;
+    flex-wrap: wrap;
+}
+.services-item {
+    max-width: 340px;
+    margin: 1.4rem 0;
+    padding: 2rem;
+    border-radius: 15px;
+    transition: box-shadow .2s;
+}
+.services-item:hover {
+    box-shadow: 0 4px 15px 0 rgb(226, 226, 226);
+}
+.services-item span {
+    margin-bottom: 1.9rem;
+    padding: .8rem;
+    font-size: 2rem;
+    background: var(--color-blue);
+    color: #ffffff;
+    border-radius: 10px;
+}
+.services-item .item-2 {
+    background: #27AE60;
+}
+.services-item .item-3 {
+    background: #EB5757;
+}
+.services-item h4 {
+    font-size: 1.4rem;
+    margin-bottom: 1.3rem;
+}
+.services-item p {
+    font-size: .95rem;
+    margin-bottom: 1.3rem;
+}
+.services-item button {
+    padding: .5rem 1rem;
+    font: normal 400 .9rem var(--font-main);
+    border: none;
+    border-radius: 10px;
+    background: #ddd;
+    color: #777;
+    transition: background .3s, color .3s;
+}
+.services-item button:hover {
+    background: var(--color-blue);
+    color: #ffffff;
+}
+
+/* Section - Works Edie */
+
+#content-edie__works h3 {
+    padding: 0 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+.works {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 2rem;
+}
+.works-item {
+    max-width: 375;
+}
+.works-item__img {
+    margin-bottom: .4rem;
+}
+.works-item img {
+    max-width: 100%;
+    border-radius: 18px;
+    object-fit: scale-down;
+}
+.works-item p {
+    font-size: .8rem;
+}
+.works-item h4 {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+#content-edie__works a {
+    margin: 2rem 0;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 400;
+    color: var(--color-blue);
+}
+#content-edie__works a span {
+    margin-right: .5rem;
+}
+
+/* Section - Team Edie */
+
+#content-edie__team {
+    display: flex;
+    flex-wrap: wrap;
+}
+.team-content {
+    margin: 2rem 0 1.5rem 0;
+    width: 80%;
+}
+.team-content span {
+    color: #EB5757;
+}
+.team-content h3 {
+    font: normal 500 2rem var(--font-main);
+}
+.team-content p {
+    margin: 1.2rem 0;
+    font-size: .9rem;
+}
+
+.team-images {
+    max-width: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+.team-images img {
+    max-width: 50%;
+    border-radius: 15px;
+}
+.team-images__vertical {
+    width: 50%;
+}
+.team-images__vertical img {
+    max-width: 100%;
+    border-radius: 15px;
+
+}
+.team-images__vertical img:first-child {
+    max-width: 90%;
+}
+
+/* Section - Testimonial Edie */
+
+#content-edie__testimonial {
+    margin: 5rem 0;
+}
+#content-edie__testimonial p {
+    margin-bottom: 2rem;
+    font: normal 500 1.5rem var(--font-main);
+}
+
+.testimonial-author {
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+}
+.testimonial-author img {
+    width: 23%;
+    border-radius: 12px;
+}
+.testimonial-author__info {
+    padding: 0 1.4rem;
+}
+.testimonial-author__info h4 {
+    padding-bottom: .9rem;
+    font: normal 500 1.3rem var(--font-main);
+}
+
+/* Section - Footer */
+
+/* footer */
+
+#footer-edie {
+    padding: 2.5rem;
+    padding-bottom: 1rem;
+    font-family: var(--font-main);
+    background: #100E1D;
+    color: #ffffff;
+}
+.footer-edie__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.content__links {
+    min-width: 330px;
+}
+.content__links ul li {
+    padding-bottom: .4rem;
+    list-style: none;
+    color: #ffffff;
+}
+.content__links ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+.content__media {
+    min-width: 330px;
+}
+.content__form {
+    min-width: 350px;
+}
+
+.content__media h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.content__media i {
+    font-size: 1.5rem;
+    margin-right: .4rem;
+    cursor: pointer;
+}
+
+
+.footer {
+    margin: 11rem 0 1rem 0;
+    text-align: center;
+    font: normal 400 0.8rem var(--font-main);
+    color: #828282;
+}
+.username a {
+    font-weight: 700;
+    color: #828282;
+}
