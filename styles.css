@@ -112,7 +112,7 @@ li {
 /* ===================================== */
 
 #header-edie__hero {
-    padding: 0 calc(1.7rem + 3vw);
+    padding: 2rem calc(1.7rem + 3vw) 0 calc(1.7rem + 3vw);
     margin-bottom: 5rem;
     display: flex;
     flex-direction: column;
@@ -127,10 +127,10 @@ li {
     font-size: .7rem;
 }
 #header-edie__hero h2 {
-    font-size: calc(1.8rem + 1vw);
+    font-size: calc(1.6rem + .7vw);
 }
 #header-edie__hero h3 {
-    font-size: calc(1.7rem + 1vw);
+    font-size: calc(1.5rem + .7vw);
 }
 #header-edie__hero p {
     max-width: 290px;
@@ -405,7 +405,16 @@ li {
 /* ========== Breakpoints ========== */
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+    #header-edie__hero img {
+        margin: 1rem 0;
+        max-width: 95vw;
+        align-self: center;
+        border-radius: 12px;
+        height: 140px;
+        object-fit: cover;
+    }
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
