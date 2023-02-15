@@ -30,6 +30,7 @@ button {
 }
 
 input {
+    width: auto;
     border: none;
     outline: none;
 }
@@ -70,11 +71,11 @@ li {
     text-align: end;
     position: absolute;
     right: -100%;
-    bottom: -260px;
+    bottom: -255px;
     z-index: -1;
     background: #ffffff;
     list-style: none;
-    border: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
     border-top: none;
     border-radius: 0 0 0 1rem;
     animation: translateTwo .5s forwards;
@@ -112,7 +113,7 @@ li {
 /* ===================================== */
 
 #header-edie__hero {
-    padding: 2rem calc(1.7rem + 3vw) 0 calc(1.7rem + 3vw);
+    padding: 2rem calc(1.7rem + 3vw) 4rem calc(1.7rem + 3vw);
     margin-bottom: 5rem;
     display: flex;
     flex-direction: column;
@@ -182,6 +183,10 @@ li {
 
 /* Section - Services Edie */
 
+#content-edie__services {
+    padding-bottom: 5rem;
+}
+
 #content-edie__services h3 {
     padding: 0 2.5rem;
     margin-bottom: 2rem;
@@ -241,6 +246,10 @@ li {
 
 /* Section - Works Edie */
 
+#content-edie__works {
+    padding-bottom: 5rem;
+}
+
 #content-edie__works h3 {
     padding: 0 2.5rem;
     margin-bottom: 2rem;
@@ -284,6 +293,7 @@ li {
 #content-edie__team {
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 5rem;
 }
 .team-content {
     margin: 2rem 0 1.5rem 0;
@@ -326,6 +336,7 @@ li {
 /* Section - Testimonial Edie */
 
 #content-edie__testimonial {
+    padding-bottom: 5rem;
     margin: 5rem 0;
 }
 #content-edie__testimonial p {
@@ -413,6 +424,9 @@ li {
         border-radius: 12px;
         height: 140px;
         object-fit: cover;
+    }
+    input {
+        width: 180px;
     }
 }
 
