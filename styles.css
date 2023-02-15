@@ -484,6 +484,7 @@ li {
     #content-edie__team,
     #content-edie__testimonial {
         padding: calc(.9rem + 1vw);
+        padding-bottom: 10rem;
     }
 
     #content-edie__testimonial p {
@@ -503,6 +504,7 @@ li {
 
     #header-edie__hero {
         padding: 0 calc(10rem + 3vw);
+        padding-bottom: 3rem;
     }
 
     .services {
@@ -521,6 +523,7 @@ li {
     #content-edie__team,
     #content-edie__testimonial {
         padding: 0 calc(8rem + 1vw);
+        padding-bottom: 10rem;
     }
 
     #content-edie__testimonial p {
@@ -542,6 +545,7 @@ li {
 
     #content-edie__services {
         padding: calc(4rem + 1vw);
+        padding-bottom: 10rem;
     }
 
     .services {
